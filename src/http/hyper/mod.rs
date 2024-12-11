@@ -22,6 +22,8 @@
 //! limitations in Hyper's stream counting capabilities.
 #[cfg(all(not(feature = "monoio-legacy"), not(feature = "hyper-native-tls")))]
 mod body;
+#[cfg(feature = "monoio-legacy")]
+mod tls_connector;
 
 use std::{
     cell::UnsafeCell,

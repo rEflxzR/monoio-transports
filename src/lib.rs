@@ -124,4 +124,5 @@ pub use error::*;
 
 pub mod connectors;
 pub mod http;
+#[allow(dead_code)]
 pub mod pool;

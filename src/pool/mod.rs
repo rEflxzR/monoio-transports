@@ -115,6 +115,7 @@ impl<T: Poolable, K: Key> Pooled<K, T> {
         }
     }
 
+    #[allow(unused)]
     #[inline]
     pub(crate) const fn unpooled(value: T) -> Self {
         Self {
